@@ -112,5 +112,12 @@ p {
 }
 
 .index-card {
+    color-interpolation-filters: auto;
+}
 
+.lab-info {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
 }
