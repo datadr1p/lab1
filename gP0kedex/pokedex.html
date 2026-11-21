@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pokédex Pokémon TCG</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pokemon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <navbar>
+        <ul>
+            <img src="logo.svg" alt="Logo">
+
+            <li>
+                <a href="Pokedex.html" title="Pokédex">
+                    <i class="fa-solid fa-book"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html" title="Accueil">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </li>
+        </ul>
+    </navbar>
+
+    <main class="pokedex">
+
+        <div class="search-box">
+            <input type="text" id="searchPokemon" placeholder="Rechercher" autocomplete="off">
+        </div>
+
+        
+        <br>
+        <br>
+
+        <div id="loading" class="status">
+            Chargement...
+        </div>
+
+        <div id="pokemon" class="pokemon-grid"></div>
+
+        <div id="pagination" class="pagination">
+
+            <button id="previousPage" disabled>
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <span id="pageNumber">Page 1</span>
+
+            <button id="nextPage">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="/js/pokemon.js"></script>
+
+</body>
+
+</html>

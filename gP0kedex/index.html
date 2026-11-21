@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P0kedex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <navbar>
+        <ul>
+            <img src="logo.svg" alt="">
+            <li><a href="Pokedex.html"><i class="fa-solid fa-book"></i></a></li>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+        </ul>
+    </navbar>
+    <div class="index-main-card">
+        <input type="text" placeholder="Search...">
+    </div>
+
+    <div class="index-card">
+        <h1>Bienvenue sur P0kedex</h1>
+        <p>Découvrez l'univers des cartes Pokémon avec notre Pokédex interactif. Explorez, recherchez et apprenez tout sur vos cartes préférées !</p>
+    </div>
+</body>
+<script>
+    const monImage = document.querySelector('navbar img');
+
+    monImage.addEventListener('click', function() {
+        monImage.classList.toggle('tourner');
+    });
+</script>
+
+</html>
+
